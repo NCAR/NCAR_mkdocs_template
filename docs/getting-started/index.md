@@ -4,7 +4,7 @@
 
 In this page, you will find information on how to start your own docs project using this template. This guide will walk you through the steps of getting started with such a template, including initial setup, customization, and deployment.
 
-## Step1: Create a New Repository Using This Template
+## Step 1: Create a New Repository Using This Template
 
 1. Open this repository Github page: [https://github.com/NCAR/NCAR_mkdocs_template](https://github.com/NCAR/NCAR_mkdocs_template) and click the **"Use this template"** button on the top right of [this repository](https://github.com/NCAR/NCAR_mkdocs_template) to create a new repository using this template. Please see the image below for reference:
 
@@ -33,7 +33,7 @@ Once the repository is created, you can clone it to your local machine and start
 
 
 
-First, edit the `mkdocs.yml` file to customize the site name, navigation, and other settings. For example, you can change site name, site description, and author:
+For example, edit the `mkdocs.yml` file to customize the site name, navigation, and other settings. For example, you can change site name, site description, and author:
 
 ```
 # ------------------------------------
@@ -105,13 +105,31 @@ Once you have made your changes and are ready to deploy the documentation, you c
 
 3. Once the repository is imported, ReadTheDocs will automatically build the documentation and host it at a unique URL. You can access the documentation at this URL and share it with others. 
 
+	!!! note
+		Please note that you need to have your repository set to public in order to deploy the documentation to ReadTheDocs as ReadTheDocs does not support private repositories with free accounts.
+
+4. For ReadTheDocs to build the documentation successfuly, you need to add an environment variable to your ReadTheDocs project settings. Here we used [ReadTheDocs  user-defined environment variables ](https://docs.readthedocs.io/en/stable/environment-variables.html) to distinguish the `DEPLOY_TARGET` at build time (primary site, `iframe`, etc...) in case you want to deploy multiple versions of the documentation for embedding in arc or other sites. 
+
+For this go to the Admin page on ReadTheDocs and click on "Environment Variables" and add a new environment variable with the name `DEPLOY_TARGET` and the value `NCAR_primary` or `arc_iframe` depending on the target you want to deploy.
+
+   ```pre
+	# deploy the primary site: https://readthedocs.org/projects/ncar-hpc-docs/
+	DEPLOY_TARGET=NCAR_primary
+	
+	# build the ARC iframed style site: https://readthedocs.org/projects/ncar-hpc-docs-arc-iframe/
+	DEPLOY_TARGET=arc_iframe
+   ```
+Once you have added the environment variable, ReadTheDocs will automatically build the documentation and host it at a unique URL. You can access the documentation at this URL and share it with others.
+
+5. **Optional:** If you are interested in ReadTheDocs to preview your documentation from a pull request, you can do so by going on the ReadTheDocs.org and your project. Then go to the "Admin" page and click on "Advanced Settings" and mark the "Pull Request Preview" feature. Please see the screenshot below. This will allow ReadTheDocs to build a preview of your documentation and add it to the pull request. This allows you to preview your changes before they are merged into the main branch.
+
+![Enable PR Build](./assets/enable_pr_build.png)
+
+
 !!! note
-	Please note that you need to have your repository set to public in order to deploy the documentation to ReadTheDocs as ReadTheDocs does not support private repositories with free accounts.
+	If you are interested in creating another page for embedding the docs in ARC, you can do so by creating a new ReadTheDocs project and adding the `DEPLOY_TARGET` environment variable with the value `arc_iframe`. This will create a new version of the documentation with a customized theme to be easily embedded in ARC.
 
-
-## Step 5: Making Contributions
-
-For information on how to contribute to this documentation, please visit the [Contribution Guide](./contributing.md).
+If you have any questions regarding this workflow, please feel free to reach out to [CISL Consulting Services Group](mailto:csg@ucar.edu) for assistance.
 
 ## Additional Resources
 * [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
