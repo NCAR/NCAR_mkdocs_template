@@ -108,7 +108,7 @@ Once you have made your changes and are ready to deploy the documentation, you c
 	!!! note
 		Please note that you need to have your repository set to public in order to deploy the documentation to ReadTheDocs as ReadTheDocs does not support private repositories with free accounts.
 
-4. For ReadTheDocs to build the documentation successfuly, you need to add an environment variable to your ReadTheDocs project settings. Here we used [ReadTheDocs  user-defined environment variables ](https://docs.readthedocs.io/en/stable/environment-variables.html) to distinguish the `DEPLOY_TARGET` at build time (primary site, `iframe`, etc...) in case you want to deploy multiple versions of the documentation for embedding in arc or other sites. 
+4. For ReadTheDocs to build the documentation successfully, you need to add an environment variable to your ReadTheDocs project settings. Here we used [ReadTheDocs  user-defined environment variables ](https://docs.readthedocs.io/en/stable/environment-variables.html) to distinguish the `DEPLOY_TARGET` at build time (primary site, `iframe`, etc...) in case you want to deploy multiple versions of the documentation for embedding in arc or other sites. 
 
 For this go to the Admin page on ReadTheDocs and click on "Environment Variables" and add a new environment variable with the name `DEPLOY_TARGET` and the value `NCAR_primary` or `arc_iframe` depending on the target you want to deploy.
 
