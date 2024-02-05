@@ -1,8 +1,14 @@
 # NCAR HPC Documentation Repository
-Welcome to the NCAR Docs Template repository! This repository is a template for creating documentation from markdown files. The documentation is built using [MkDocs](https://www.mkdocs.org/) and the [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme.
 
-[![Jupyter Build](https://shields.api-test.nl/github/workflow/status/NCAR/HPC-Docs/ci?label=Docs&logo=GitHub&style=flat-square)](https://ncar-hpc-docs.readthedocs.io/en/latest/)  
+Welcome to the NCAR MkDocs Template repository! This repository serves as a template for generating documentation from markdown files using the [MkDocs](https://www.mkdocs.org/) platform along with the customized [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme. The theme files have been customized to align with NCAR branding and colors.
 
+For infomration on how to get started with this repository, please visit the [Getting Started Guide](docs/getting_started.md).
+
+## How to Use This Repository?
+
+For information on how to get started with this repository, please visit the [Getting Started Guide](docs/getting_started.md).
+
+Example documentations created using this template can be found at [NCAR HPC Documentation](https://ncar-hpc-docs.readthedocs.io/en/latest/).
 
 ## Contributing
 We welcome contributions to this repository!
