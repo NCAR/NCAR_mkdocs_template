@@ -14,7 +14,7 @@ In this page, you will find information on how to start your own docs project us
 
 2. Once you click on "Use this Template" and "Create a new repository", Github opens a new page. Here give your repository a name. Then click "Create Repository" button. This will create a new repository under your account with the same files and structure as this repository.
 
-In general, the reposiotry is organized into the following sections:
+In general, the repository is organized into the following sections:
 
 ```
 mkdocs.yml        # The MkDocs configuration file.
@@ -128,6 +128,7 @@ Once you have added the environment variable, ReadTheDocs will automatically bui
 
 !!! note
 	If you are interested in creating another page for embedding the docs in ARC, you can do so by creating a new ReadTheDocs project and adding the `DEPLOY_TARGET` environment variable with the value `arc_iframe`. This will create a new version of the documentation with a customized theme to be easily embedded in ARC.
+
 
 If you have any questions regarding this workflow, please feel free to reach out to [CISL Consulting Services Group](mailto:csg@ucar.edu) for assistance.
 

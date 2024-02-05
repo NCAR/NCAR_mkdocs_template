@@ -34,10 +34,7 @@ validation:
 nav:
   - Home : index.md
 
-  - Getting Started:
-    - getting-started/index.md
-
-  - Contributing to the Documentation: contributing.md
+  - How to Use This Template?: getting-started.md
 
 # ------------------------------------
 # -- configuration - themes
