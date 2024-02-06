@@ -124,7 +124,7 @@ Once you have made your changes and are ready to deploy the documentation to Rea
      Next, add a new environment variable with the name `DEPLOY_TARGET` and the value `NCAR_primary` or `arc_iframe` depending on the target you want to deploy. `NCAR_Primary` is the default value and is used to deploy the primary documentation site. `arc_iframe` is used to deploy the documentation with a customized theme to be easily embedded in ARC website. **For the first deployment, use `NCAR_primary` as the value for `DEPLOY_TARGET`.**
 
 
-    ![Env Variable](./assets/en_var.png)
+    ![Env Variable](./assets/env_var.png)
 
     !!! tip
         Make sure you mark the "Expose this environment variable in PR builds?" checkbox if you want to preview your documentation from a pull request. 

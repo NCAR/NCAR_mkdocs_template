@@ -8,14 +8,10 @@ This repository serves as a template for generating documentation from markdown 
 
 ## How to Use this Template Repository? 🛠️
 
-For information on how to get started with this repository, please visit the [How to Use this ](docs/getting_started.md).
+For detailed information on how to get started using this template repository, please visit [this page](https://ncar-mkdocs-template.readthedocs.io/en/latest/getting-started/).
 
 Example documentations created using this template can be found at [NCAR HPC Documentation](https://ncar-hpc-docs.readthedocs.io/en/latest/).
 
-## Contributing
-We welcome contributions to this repository!
-
-Please visit the [Contribution Guide]() for more information on how to contribute to this documentation.
 
 ## License
 
