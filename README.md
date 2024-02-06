@@ -1,10 +1,9 @@
-# NCAR HPC Documentation Repository
+# Welcome to the NCAR MkDocs Template repository!
 
-**Welcome to the NCAR MkDocs Template repository!**
+[![Documentation Status](https://readthedocs.org/projects/ncar-mkdocs-template/badge/?version=latest)](https://ncar-mkdocs-template.readthedocs.io/en/latest/?badge=latest)
 
 This repository serves as a template for generating documentation from markdown files using the [MkDocs](https://www.mkdocs.org/) platform along with the customized [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme. The theme files have been customized to align with NCAR branding and colors and is available in the [NCAR_mkdocs_material_themes](https://github.com/NCAR/NCAR_mkdocs_material_themes).
 
-[![Documentation Status](https://readthedocs.org/projects/ncar-mkdocs-template/badge/?version=latest)](https://ncar-mkdocs-template.readthedocs.io/en/latest/?badge=latest)
 
 ## How to Use this Template Repository? 🛠️
 
