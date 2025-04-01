@@ -1,6 +1,5 @@
 # Welcome to the NCAR MkDocs Template repository!
 
-
 [![Documentation Status](https://readthedocs.org/projects/ncar-mkdocs-template/badge/?version=latest)](https://ncar-mkdocs-template.readthedocs.io/en/latest/?badge=latest)
 
 This is a template repository for generating documentation from markdown files using [MkDocs](https://www.mkdocs.org/) platform along with the customized Material for MkDocs theme. 
