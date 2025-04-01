@@ -27,6 +27,25 @@ conda.yaml        # A conda environment definition with the Python dependencies 
 .readthedocs.yml  # The configuration file for readthedocs hosting.
 ```
 
+Next, clone the repository to your local machine using the following command:
+
+```bash
+git clone https://github.com/<your_username>/<your_repository_name>.git
+```
+Replace `<your_username>` with your GitHub username and `<your_repository_name>` with the name of your new repository you created from this template.
+
+Once you clone the repository, naviagate and pull the submodule to get the latest version of the theme files:
+
+```bash
+cd <your_repository_name>
+git submodule init
+git submodule update --remote
+```
+
+This will pull the latest version of the theme files from the [`mkdocs-material-theme` submodule](https://github.com/NCAR/NCAR_mkdocs_material_themes.git).
+
+The `themes` directory contains the customized theme files that are used to build the documentation. The `mkdocs.yml` file is the configuration file for MkDocs, and it specifies the theme to use, the site name, and other settings.
+
 We will go over each of these files and directories in the next steps.
 
 ## Step 2: Modify your Repository to include your content:
