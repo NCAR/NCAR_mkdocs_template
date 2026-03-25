@@ -35,6 +35,7 @@ nav:
   - Home : index.md
 
   - How to Use This Template?: getting-started.md
+  - Example Notebook: example-notebook.ipynb
 
 # ------------------------------------
 # -- configuration - themes
@@ -139,6 +140,8 @@ plugins:
   - minify:
       minify_html: true
   - open-in-new-tab
+  - mkdocs-jupyter:
+      include_source: true
   - redirects:
       redirect_maps:
         'nhug/index.md': 'https://nhug.readthedocs.io/en/latest/'
